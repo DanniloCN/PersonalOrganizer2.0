@@ -376,7 +376,7 @@ a {
 .box-02 .titulo span {
     font: 35px 'calibri';
     font-weight: lighter;
-    color: #f47e34;
+    color: #0D0D0D;
     display: block;
 }
 
@@ -589,7 +589,7 @@ a {
     }
     .menu-resp {
         display: block;
-        background: url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao2-programado/template/pw-images/menu-resp.png) center no-repeat;
+        background: url(Imagens/menu-resp.png) center no-repeat;
         padding: 40px;
         cursor: pointer
     }
