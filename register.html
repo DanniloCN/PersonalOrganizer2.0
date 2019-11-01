@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
 
@@ -23,6 +23,9 @@
 
 <body class="bg-gradient-primary">
 
+    <ul id="usersList"></ul>
+    <hr>
+
     <div class="container">
 
         <div class="card o-hidden border-0 shadow-lg my-5">
@@ -38,26 +41,26 @@
                             <form class="user">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Primeiro nome">
+                                        <input type="text" class="form-control form-control-user" id="inputFirstName" placeholder="Primeiro nome">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Sobrenome">
+                                        <input type="text" class="form-control form-control-user" id="inputLastName" placeholder="Sobrenome">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Endereço de email">
+                                    <input type="email" class="form-control form-control-user" id="inputEmail" placeholder="Endereço de email">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Senha">
+                                        <input type="password" class="form-control form-control-user" id="inputPassword" placeholder="Senha">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Confirme sua senha">
+                                        <input type="password" class="form-control form-control-user" id="inputRepeatPassword" placeholder="Confirme sua senha">
                                     </div>
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                <button class="btn btn-primary btn-user btn-block" id="btnCriar">
                   Criar conta!
-                </a>
+                                </button>
                             </form>
                             <hr>
                             <div class="text-center">
@@ -73,6 +76,10 @@
         </div>
 
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+    <script scr="js\app.js"></script>
+    <script scr="js\authentication.js"></script>
 
 </body>
 
