@@ -1,21 +1,29 @@
-var btnLogin = document.getElementById("btnLogin");
+var usersList = document.getElementById('usersList');
 var inputEmail = document.getElementById("inputEmail");
 var inputPassword = document.getElementById("inputPassword");
+var btnCriar = document.getElementById("btnCriar");
 
 
-btnLogin.addEventListener('click', function() {
+btnCriar.addEventListener('click', function() {
+    create(inputEmail.value, inputPassword.value);
 
-    firebase.auth().signInWithEmailAndPassword(inputEmail.value, inputPassword.value).then(function(result) {
-        alert("Usuário conectado!");
-        console.log("Usuário conectado!");
-    }).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ...
-
-        alert(errorMessage);
-        console.log("Error");
     });
 
-});
+    function create(email, password) {
+        var data = {
+            email: email,
+            password: password
+        };
+
+        return firebaseConfig.database().ref().child('users').push(data);
+    }
+
+    firebaseConfig.database().ref('users').on('value', function (snapshot){
+        usersList.innerHTML = '';
+        snapshot.forEach(function (item) {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(item.val().email + ': ' + item.val().password));
+            usersList.appendChild(li);
+        });
+ 
+    });
