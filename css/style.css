@@ -320,7 +320,7 @@ a {
 
 .box-01 .item .titulo {
     font: 45px 'calibri';
-    font-weight: lighter;
+    font-weight: bold;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -338,14 +338,14 @@ a {
 }
 
 .box-01 .item .entrar {
-    font: 25px 'calibri';
+    font: 30px 'calibri';
     font-weight: lighter;
     color: #fff;
     margin-bottom: 10px;
     border: 2px solid #fff;
     border-radius: 30px;
-    padding: 8px;
-    width: 220px;
+    padding: 12px;
+    width: 300px;
     margin: 0 auto;
     transition: all 0.5s;
 }
@@ -369,8 +369,9 @@ a {
 
 .box-02 .titulo {
     font: 50px 'calibri';
-    font-weight: lighter;
+    font-weight: bold;
     color: #fff;
+
 }
 
 .box-02 .titulo span {
@@ -392,14 +393,14 @@ a {
 }
 
 .box-02 .entrar {
-    font: 25px 'calibri';
+    font: 30px 'calibri';
     font-weight: lighter;
     color: #fff;
     margin-bottom: 10px;
     border: 2px solid #fff;
     border-radius: 30px;
-    padding: 8px;
-    width: 220px;
+    padding: 12px;
+    width: 300px;
     margin: 0 auto;
     transition: all 0.5s;
 }
@@ -589,7 +590,7 @@ a {
     }
     .menu-resp {
         display: block;
-        background: url(Imagens/menu-resp.png) center no-repeat;
+        background: url("Imagens\menu-resp.png") center no-repeat;
         padding: 40px;
         cursor: pointer
     }
