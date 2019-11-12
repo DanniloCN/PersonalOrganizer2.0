@@ -63,9 +63,17 @@
                                             id="inputRepeatPassword" placeholder="Confirme sua senha">
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary btn-user btn-block" id="btnCriar">
+                                <button onclick="redirecionar()" type="button" class="btn btn-primary btn-user btn-block" id="btnCriar">
                                     Criar conta!
                                 </button>
+
+                                <script type="text/javascript">
+                                    function redirecionar() {
+                                        window.location.href = "home.html";
+                                    }
+
+                                </script>
+
                             </form>
                             <hr>
                             <div class="text-center">
