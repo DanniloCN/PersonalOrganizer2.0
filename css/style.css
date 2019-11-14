@@ -99,8 +99,7 @@ a {
 .menu-resp,
 .overlay,
 .fechar {
-    display: none;
-    position: fixed;
+    display: none
 }
 
 .contato input {
@@ -282,6 +281,8 @@ a {
     position: relative;
 }
 
+.box-01-total {}
+
 .box-01 {
     display: flex;
     flex-wrap: wrap;
@@ -370,6 +371,7 @@ a {
     font: 50px 'calibri';
     font-weight: bold;
     color: #fff;
+
 }
 
 .box-02 .titulo span {
@@ -444,6 +446,9 @@ a {
     background: #eee;
     transition: all 0.3s;
 }
+
+.box-03 .item:hover .titulo,
+.box-03 .item:hover .conteudo {}
 
 .box-03 .item .img {
     width: 151px;
