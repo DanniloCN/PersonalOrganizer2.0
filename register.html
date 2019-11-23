@@ -6,9 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Personal Organizer Match - Cadastro</title>
 
     <link href='Imagens/favicon.png' rel='shortcut icon' type='image/x-icon' />
+    <link href="" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="css\sb-admin-2.min.css" rel="stylesheet">
 
@@ -49,6 +51,14 @@
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user" id="inputRepeatPassword" placeholder="Confirme sua senha">
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="tipoUsuario" placeholder="O que você é no site?">
+                                        <option value="user"selected="selected">Usúario comum</option>
+                                        <option value="organizarobjetos">Profissional em organizar objetos</option>
+                                        <option value="organizarFestas">Profissional em organizar festas</option>
+                                        <option value="organizarArquivos">Profissional em organizar arquivos</option>
+                                    </select>
                                 </div>
                                 <button type="button" class="btn btn-primary btn-user btn-block" id="btnCriar">
                                     Criar conta!
